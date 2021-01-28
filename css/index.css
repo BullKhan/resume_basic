@@ -110,8 +110,12 @@ header {
 
 /* 세션 2 - 포트폴리오 */
 .section:nth-child(2) .pf_wrap { height: 100%; padding-top:150px; }
+.section:nth-child(2) h2 { 
+    font-size: 50px; font-family: 'Russo One', sans-serif; color: #ddd;
+    letter-spacing: 5px; text-shadow: 4px 4px 4px #000; text-align: center;
+}
 .section:nth-child(2) .pf_wrap ul { 
-    height: calc(100% - 150px); margin-top: 3%;
+    height: calc(100% - 150px); 
     background: #ddd; border-radius: 50px;
 }
 .section:nth-child(2) li {
@@ -168,18 +172,25 @@ header {
 
 /* 세션 3 - Skills */
 .section:nth-child(3) .skills_wrap {
-    height: calc(100% - 200px); padding-top: 200px;
-    font-size: 20px; font-weight: bold; text-align: center;
+    height: 100%; font-size: 20px; font-weight: bold; text-align: center;
+    color: #ccc; position: relative;
 }
-.section:nth-child(3) .skills_wrap > div {
+.section:nth-child(3) .skills_wrap h2 {
     display: inline-block;
-    width: 18%; height: 80%; margin: 10% 0 10%;
+    position: absolute; top: 170px; left:50%; transform: translate(-50%);
+    font-size: 50px; font-family: 'Russo One', sans-serif; color: #ddd;
+    letter-spacing: 5px; text-shadow: 4px 4px 4px #000;
+}
+.section:nth-child(3) .skills_wrap > div { 
+    display: inline-block; width: 15%;
+    height: calc(100% - 200px); padding-top: 200px;
+    margin: 5% 0;
 }
 .section:nth-child(3) .skills_wrap .score {
-    height: 90%; padding-top: 125px; position: relative;
+    height: 100%; padding-top: 125px; position: relative;
 }
 .section:nth-child(3) .skills_wrap .score .myscore {
-    position: absolute; bottom: 0; width: 50%;
+    position: absolute; bottom: 0; width: 30%;
     left:50%; transform: translate(-50%);
 }
 .section:nth-child(3) .skills_wrap .score .myscore span {
