@@ -39,7 +39,7 @@ header {
 .section:nth-child(3),
 .section:nth-child(4) { height: 100vh; }
 .section:nth-child(1) {
-    background: #282828; margin-top: 150px; position: relative;
+    background: #1d474e; margin-top: 150px; position: relative;
 }
 .section:nth-child(2) { background: #484848; }
 .section:nth-child(3) { background: #183a66; }
@@ -62,12 +62,46 @@ header {
     position: absolute; top: 50%; transform: translateY(-50%);
     border-radius: 50px; padding: 50px;
 }
-.section:nth-child(1) .slide .slide_content .txt h3 {
-     font-size: 50px; text-align: center;
+.section:nth-child(1) .slide .slide_content .txt table th {
+    text-align: left; position: relative; }
+.section:nth-child(1) .slide .slide_content .txt table th::after {
+    content:'';
+    position:absolute; top:50%; transform: translateY(-50%); left:-15px; 
 }
-/* .section:nth-child(1) .slide .slide_content .txt p{} */
-
+.section:nth-child(1) .slide1 .slide_content .txt h3 {
+    font-size: 60px; text-align: center; letter-spacing: 10px; }
+.section:nth-child(1) .slide1 .txt table { font-size:40px; line-height: 2em; }
+.section:nth-child(1) .slide1 table td {width: 40%;}
+.section:nth-child(1) .slide1 table td {width: 60%;}
+.section:nth-child(1) .slide1 table th::after { 
+    width: 5px; height: 40px; background: #1d474e; }
+.section:nth-child(1) .slide2 .slide_content .txt h3 {
+    font-size: 50px; text-align: center; letter-spacing: 5px; }
+.section:nth-child(1) .slide2 .txt table { font-size:30px; line-height: 2em; }
+.section:nth-child(1) .slide2 table th {width: 40%; padding: 10px 0;}
+.section:nth-child(1) .slide2 table td {width: 60%;}
+.section:nth-child(1) .slide2 table tr:last-child td { line-height: 1em; }
+.section:nth-child(1) .slide2 table th::after { 
+    width: 5px; height: 20px; background: #256339; }
 .section:nth-child(1) .slide2 { background: rgba(46, 128, 35, 0.5); }
+
+.section:nth-child(1) .slide3 .slide_content .txt h3 {
+    font-size: 60px; text-align: center; letter-spacing: 10px;
+}
+.section:nth-child(1) .slide3 .slide_content .txt img {
+    display: inline-block; width: 30%;
+    margin-top: 20px;
+}
+.section:nth-child(1) .slide3 .slide_content .txt > div > div {
+    float: right; width:55%; margin: 10px auto;
+}
+.section:nth-child(1) .slide3 .slide_content .txt div > p {
+    margin-top: 10px;
+}
+.section:nth-child(1) .slide3 .slide_content .txt h4 {
+    text-align: center; letter-spacing: 5px;
+}
+
 .section:nth-child(1) .slide3 { background: rgba(148, 33, 245,0.5); }
 
 /* 슬라이드 화살표 */
@@ -191,17 +225,20 @@ header {
 }
 .section:nth-child(3) .skills_wrap .score {
     height: 100%; padding-top: 125px; position: relative;
+    background: #1c698a; width: 50%; margin:0 auto;
+    border-radius: 50px; overflow: hidden;
 }
 .section:nth-child(3) .skills_wrap .score .myscore {
-    position: absolute; bottom: 0; width: 30%;
+    position: absolute; bottom: 0; width: 100%;
     left:50%; transform: translate(-50%);
 }
 .section:nth-child(3) .skills_wrap .score .myscore span {
+    height: 100%;
     position: absolute; left:50%; transform: translate(-50%);
-    top:-25px;
+    top:-30px;
 }
 .section:nth-child(3) .skills_wrap p {padding-top: 10px; }
-.section:nth-child(3) .skills_wrap .html .myscore{
+.section:nth-child(3) .skills_wrap .html .myscore {
     height: 0; background: #e12729; animation: html_ani 1s both 0s;
 }
 .section:nth-child(3) .skills_wrap .css .myscore{
@@ -224,13 +261,13 @@ header {
     100% { height: 60%; opacity: 1;} }
 @keyframes script_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 20%; opacity: 1;} }
+    100% { height: 30%; opacity: 1;} }
 @keyframes jquery_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 10%; opacity: 1;} }
+    100% { height: 20%; opacity: 1;} }
 @keyframes react_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 1%; opacity: 1;} }
+    100% { height: 10%; opacity: 1;} }
 
 
 /* 세션 4 - Contact Me */
