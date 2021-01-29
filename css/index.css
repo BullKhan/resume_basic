@@ -223,13 +223,15 @@ header {
     height: calc(100% - 200px); padding-top: 200px;
     margin: 5% 0;
 }
+.section:nth-child(3) .skills_wrap > div p { font-size: 30px; }
 .section:nth-child(3) .skills_wrap .score {
     height: 100%; padding-top: 125px; position: relative;
     background: #1c698a; width: 50%; margin:0 auto;
     border-radius: 50px; overflow: hidden;
+    border: 5px solid #aaa;
 }
 .section:nth-child(3) .skills_wrap .score .myscore {
-    position: absolute; bottom: 0; width: 100%;
+    position: absolute; bottom: 0; width: 120%;
     left:50%; transform: translate(-50%);
 }
 .section:nth-child(3) .skills_wrap .score .myscore span {
@@ -255,20 +257,24 @@ header {
 }
 @keyframes html_ani { 
     0% { height: 0%; opacity: 0; }
-    100% { height: 80%; opacity: 1;} }
+    100% { height: 80%; opacity: 1;}
+}
 @keyframes css_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 60%; opacity: 1;} }
+    100% { height: 60%; opacity: 1;}
+}
 @keyframes script_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 30%; opacity: 1;} }
+    100% { height: 30%; opacity: 1;}
+}
 @keyframes jquery_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 20%; opacity: 1;} }
+    100% { height: 20%; opacity: 1;}
+}
 @keyframes react_ani {  
     0% { height: 0%; opacity: 0; }
-    100% { height: 10%; opacity: 1;} }
-
+    100% { height: 10%; opacity: 1;} 
+}
 
 /* 세션 4 - Contact Me */
 #contact > div { padding-top: 200px; height: 100%;}
