@@ -28,7 +28,7 @@ header {
     font-size:25px; color: #000;  
     padding:0px 30px; transition: all 0.3s;
 }
-#header .nav li a:hover { 
+#header .nav li.on a { 
     text-shadow: 2px 2px 20px yellow;
     color: yellowgreen;
 }
@@ -89,7 +89,7 @@ header {
     font-size: 60px; text-align: center; letter-spacing: 10px;
 }
 .section:nth-child(1) .slide3 .slide_content .txt img {
-    display: inline-block; width: 30%;
+    display: inline-block; max-width: 30%;
     margin-top: 20px;
 }
 .section:nth-child(1) .slide3 .slide_content .txt > div > div {

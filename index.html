@@ -28,7 +28,7 @@
                 </h1>
                 <nav class="nav">
                     <ul class="depth1">
-                        <li><a href="#aboutme">About Me</a></li>
+                        <li class="on"><a href="#aboutme">About Me</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact Me</a></li>
@@ -270,18 +270,6 @@
 
     </div>
 
-    <script>
-        $('.slide-group').slick({
-            autoplay:true,
-            dots:true,
-            autoplaySpeed:5000,
-            pauseOnFocus:false,
-            arrows:true,
-            prevArrow:'<button class="prev"><i class="fas fa-angle-left"></i></button>',
-            nextArrow:'<button class="next"><i class="fas fa-angle-right"></i></button>',
-        })
-        $('.gostop').click(function(){$(".slide-group").slick('slickPlay');});
-    </script>
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>
